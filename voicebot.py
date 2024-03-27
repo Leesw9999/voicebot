@@ -106,7 +106,7 @@ def main(): # 메인함수
                     st.write(f'<div style="display:flex;align-items:center;"><div style="background-color:#007AFF;color:white;border-radius:12px;padding:8px 12px;margin-right:8px;">{message}</div><div style="font-size:0.8rem;color:gray;">{time}</div></div>', unsafe_allow_html=True)
                     st.write("")
                 else:
-                    st.write(f'<div style="display:flex;align-items:center;justify-content:flex-end;"><div style="background-color:lightgray;border-radius:12px;padding:8px 12px;margin-left:8px;">{message}</div><div style="font-size:0.8rem;color:gray;">{time}</div></div>', unsafe_allow_html=True)
+                    st.write(f'<div style="display:flex;align-items:center;justify-content:flex-end;"><div style="font-size:0.8rem;color:gray;">{time}</div><div style="background-color:lightgray;border-radius:12px;padding:8px 12px;margin-left:8px;">{message}</div></div>', unsafe_allow_html=True)
                     st.write("")
 
             TTS(response) # gTTS를 활용하여 음성 파일 생성 및 재생
